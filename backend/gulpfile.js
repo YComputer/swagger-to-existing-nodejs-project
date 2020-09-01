@@ -15,7 +15,7 @@ gulp.task('lint', function () {
 
 gulp.task('develop', function () {
   nodemon({
-    exec: 'node --debug',
+    exec: 'node --inspect',
     script: 'server.js',
     ext: 'html js',
     tasks: ['lint'],
